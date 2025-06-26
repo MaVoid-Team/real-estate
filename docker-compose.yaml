@@ -18,7 +18,7 @@ services:
       - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
       - /etc/letsencrypt:/etc/letsencrypt:ro
     depends_on:
-      - mavoid_frontend
+      - realestate-frontend
     networks:
       - app-network
     restart: unless-stopped
