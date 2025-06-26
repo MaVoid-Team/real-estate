@@ -59,7 +59,7 @@ export default function ContactSection() {
 
           <motion.form
             onSubmit={handleSubmit}
-            className="space-y-6 bg-warm-taupe/50 p-8 rounded-lg shadow-xl border border-clay-beige/30"
+            className="space-y-6 bg-warm-taupe/50 p-8 rounded-sm shadow-xl border border-clay-beige/30"
             {...fadeInAnimation}
             transition={{ duration: 0.6, delay: 0.4 }}
           >

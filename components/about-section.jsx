@@ -32,7 +32,7 @@ export default function AboutSection() {
               alt="MaVoid Team" 
               width={600} 
               height={400}
-              className="rounded-lg shadow-xl object-cover w-full h-auto" 
+              className="rounded-md shadow-xl object-cover w-full h-auto" 
             />
           </motion.div>
           <motion.div {...fadeInAnimation} transition={{ duration: 0.6, delay: 0.4 }}>
@@ -43,15 +43,15 @@ export default function AboutSection() {
               Our dedicated team is committed to understanding your vision and guiding you to the property that perfectly aligns with your aspirations. With years of experience and a passion for excellence, MaVoid is redefining real estate.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center">
-              <div className="p-4 bg-almond-cream rounded-lg shadow">
+              <div className="p-4 bg-burnt-sienna/20 rounded-sm shadow">
                 <Users className="h-10 w-10 text-burnt-sienna mx-auto mb-2" />
                 <h3 className="font-semibold text-espresso-brown">Expert Team</h3>
               </div>
-              <div className="p-4 bg-almond-cream rounded-lg shadow">
+              <div className="p-4 bg-burnt-sienna/20 rounded-sm shadow">
                 <Target className="h-10 w-10 text-burnt-sienna mx-auto mb-2" />
                 <h3 className="font-semibold text-espresso-brown">Client Focused</h3>
               </div>
-              <div className="p-4 bg-almond-cream rounded-lg shadow">
+              <div className="p-4 bg-burnt-sienna/20 rounded-sm shadow">
                 <Eye className="h-10 w-10 text-burnt-sienna mx-auto mb-2" />
                 <h3 className="font-semibold text-espresso-brown">Unique Views</h3>
               </div>
