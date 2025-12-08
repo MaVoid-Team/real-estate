@@ -1,0 +1,28 @@
+services:
+  realestate-frontend:
+    build: 
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - "3958:3000"
+    networks:
+      - app-network
+    restart: unless-stopped
+
+  nginx:
+    image: nginx:alpine
+    ports:
+      - "8488:80"
+      - "4140:443"
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
+      - /etc/letsencrypt:/etc/letsencrypt:ro
+    depends_on:
+      - realestate-frontend
+    networks:
+      - app-network
+    restart: unless-stopped
+
+networks:
+  app-network:
+    driver: bridge
