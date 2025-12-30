@@ -1,6 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  distDir: "build",
+  output: "export",
+
+  basePath: "/real-estate",
+  assetPrefix: "/real-estate/",
+
+  images: {
+    unoptimized: true,
+  },
 };
 
 export default nextConfig;
