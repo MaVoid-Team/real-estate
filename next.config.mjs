@@ -6,7 +6,8 @@ const nextConfig = {
   assetPrefix: "/real-estate/",
 
   images: {
-    unoptimized: true,
+    loader: 'custom',
+    loaderFile: './image-loader.js'
   },
 };
 
